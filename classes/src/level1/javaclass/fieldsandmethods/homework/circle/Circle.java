@@ -1,4 +1,4 @@
-package level1.javaclass.fieldsandmethods.homework;
+package level1.javaclass.fieldsandmethods.homework.circle;
 
 public class Circle {
     private double radius;
@@ -25,11 +25,11 @@ public class Circle {
         return Math.PI * Math.pow(getRadius(), 2);
     }
 
-    public static double pow(double val, int powVal) {
-        if (powVal == 1) {
-            return val;
-        } else {
-            return val = val * pow(val, powVal - 1);
-        }
-    }
+//    public static double powTest(double val, int powVal) {
+//        if (powVal == 1) {
+//            return val;
+//        } else {
+//            return val = val * powTest(val, powVal - 1);
+//        }
+//    }
 }
