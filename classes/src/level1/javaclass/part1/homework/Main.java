@@ -4,14 +4,15 @@ public class Main {
     public static void main(String[] args) {
 
         Student student = new Student();
-        sayHi(student);
 
         Docent docent = new Docent();
         docent.name = "Sam";
-        sayHi(docent);
+
+        getTogether(student, docent);
     }
 
-    public static void sayHi(Human human) {
-        human.sayHi();
+    public static void getTogether(Human human1, Human human2) {
+        human1.sayHi();
+        human2.sayHi();
     }
 }

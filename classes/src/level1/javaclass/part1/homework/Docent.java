@@ -5,4 +5,7 @@ public class Docent extends Human {
     public void sayHi() {
         System.out.println("Hi! I'm a strict docent " + name);
     }
+    public void makeMyLifeHell() {
+        System.out.println("All students must suffer!");
+    }
 }

@@ -7,6 +7,6 @@ public class ElectricCar extends Car {
 
     @Override
     public void drive() {
-        getWheel().turnWheel();
+        getWheel().steerTheWheel();
     }
 }

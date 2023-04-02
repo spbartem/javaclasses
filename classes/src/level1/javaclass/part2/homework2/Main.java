@@ -14,19 +14,10 @@ public class Main {
 
     public static void testTheCar(Car car){
         System.out.println("--------------");
-        describeCar(car);
+        car.describeCar();
         driveCar(car);
-        System.out.println("--------------");
 
     }
-
-    public static void describeCar(Car car){
-        System.out.println("Name: " + car.getName() + "\n" +
-                "Type: " + car.getTypeCar() + "\n" +
-                "HP: " + car.getHp() + "\n" +
-                "Weight: " + car.getWeight());
-    }
-
     public static void driveCar(Driveable driveable){
         driveable.drive();
     }

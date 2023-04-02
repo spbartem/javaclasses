@@ -8,7 +8,7 @@ public class CombustionCar extends Car {
     @Override
     public void drive() {
         getEngine().startEngine();
-        getWheel().turnWheel();
+        getWheel().steerTheWheel();
         getEngine().stopEngine();
     }
 }

@@ -1,6 +1,6 @@
 package level1.javaclass.part2.homework2;
 
-class Car implements Driveable {
+public abstract class Car implements Driveable {
     private String name;
     private float hp;
     private int weight;
@@ -28,24 +28,11 @@ class Car implements Driveable {
                 '}';
     }
 
-    @Override
-    public void drive() {
-        System.out.println("Car wrum-wrum!");
-    }
-
-    class Wheel {
-        public void turnWheel() {
-            System.out.println("Turned the steering wheel");
-        }
-    }
-
-    class Engine {
-        public void startEngine() {
-            System.out.println("Engine started");
-        }
-        public void stopEngine() {
-            System.out.println("Engine stopped");
-        }
+    public void describeCar(){
+        System.out.println("Name: " + getName() + "\n" +
+                "Type: " + getTypeCar() + "\n" +
+                "HP: " + getHp() + "\n" +
+                "Weight: " + getWeight());
     }
 
     public String getName() {
