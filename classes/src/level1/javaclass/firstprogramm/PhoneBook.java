@@ -21,7 +21,7 @@ public class PhoneBook {
             System.out.println(findPerson(searchType, searchString, getPersons()));
             System.out.println("Если хотите завершить работу, введите *выход*\nДля продолжения введите любой символ...");
             String isExit = in.nextLine();
-            if (isExit.equals("выход")) {
+            if (isExit.equalsIgnoreCase("выход")) {
                 break;
             }
         }
@@ -89,8 +89,16 @@ class Person {
 //        }
 //    }
 
+    public static void printEmptyException(String info) {
+        if (info.isEmpty()) {
+            System.out.println("Поиск по пустому значению невозможен.");
+            System.exit(0);
+        }
+    }
+
     public static Person findPerson(String searchType, String searchString, Person[] persons) {
         for (Person person : persons) {
+            printEmptyException(searchString);
             if (person == null) continue;
             switch (searchType) {
                 case "1":
