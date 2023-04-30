@@ -18,11 +18,14 @@ public class Task3 {
         fruits.add("banana");
         fruits.add("pear");
         fruits.add("apple");
+        fruits.add("banana");
+        fruits.add("pear");
 
-        System.out.println(removeDuplicates(fruits));
+        fruits = removeDuplicates(fruits);
+        System.out.println(fruits);
     }
 
-    public static List<String> removeDuplicates(ArrayList<String> list) {
+    public static ArrayList<String> removeDuplicates(ArrayList<String> list) {
         HashSet<String> hashSet = new HashSet<>();
         hashSet.addAll(list);
         list.clear();
