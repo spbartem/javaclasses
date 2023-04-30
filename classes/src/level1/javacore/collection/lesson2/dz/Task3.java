@@ -1,9 +1,7 @@
 package level1.javacore.collection.lesson2.dz;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 
 /*
 Задание 3: Реализуй метод, который на вход примет ArrayList строк и удаляет из него все дубликаты,
