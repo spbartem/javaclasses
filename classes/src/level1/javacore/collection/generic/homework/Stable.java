@@ -4,11 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Stable<T> {
-    private List<T> horses = new ArrayList<>();
+    private final List<T> horses = new ArrayList<>();
 
-    public T addAnimal(T hourse) {
-        horses.add(hourse);
-        return hourse;
+    public T addAnimal(T horse) {
+        horses.add(horse);
+        return horse;
     }
 
     public void addAllAnimals(List<? extends T> horses) { this.horses.addAll(horses); }

@@ -9,7 +9,7 @@ public class Main {
         Stable<Animal> stableAnimal = new Stable<>();
 
         Mustang mustang = new Mustang();
-        stableHorse.addAnimal(mustang);
+        System.out.println(stableHorse.addAnimal(mustang));
 
         Pony pony = new Pony();
         stableHorse.addAnimal(pony);
